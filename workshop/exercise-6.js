@@ -8,6 +8,9 @@
 // all of the even numbers removed.
 function removeEvens(lst) {
   // lst is an array of strings
+  return lst.filter(function(num) {
+    return num % 2 != 0;
+  })
 }
 // -------------------------------------------------------------------------
 console.log('Q4 removeEvens()', removeEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
